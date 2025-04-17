@@ -15,14 +15,14 @@ jobs:
 
       - name: Send JSON Data to First URL 
         run: | 
-          curl -X POST "https://yRweBtbDTMqToeZOCxD2gA@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:gvdO2SmwTJqxyjUakMRBnA/streams/AQAAAPPcGZSWg0p5lAjDfSW1eIUAAAAA" \ 
+          curl -X POST "https://anujvagadiya3:yRweBtbDTMqToeZOCxD2gA@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:gvdO2SmwTJqxyjUakMRBnA/streams/AQAAAPPcGZSWg0p5lAjDfSW1eIUAAAAA" \ 
             -H "Authorization: Bearer ${{ secrets.AUTODESK_TOKEN }}" \
             -H "Content-Type: application/json" \ 
             -d @stream.json
 
       - name: Send JSON Data to Second URL 
         run: | 
-          curl -X POST "https://2TrR3xUPSiGZDiqqo3XFkw@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:gvdO2SmwTJqxyjUakMRBnA/streams/AQAAAP_GauqIbEBSt_w9lDDgRA0AAAAA" \ 
+          curl -X POST "https://anujvagadiya3:2TrR3xUPSiGZDiqqo3XFkw@eu.tandem.autodesk.com/api/v1/timeseries/models/urn:adsk.dtm:gvdO2SmwTJqxyjUakMRBnA/streams/AQAAAP_GauqIbEBSt_w9lDDgRA0AAAAA" \ 
             -H "Authorization: Bearer ${{ secrets.AUTODESK_TOKEN }}" \
             -H "Content-Type: application/json" \ 
             -d @stream.json 
